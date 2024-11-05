@@ -1,0 +1,12 @@
+<h1>Statistik Course dan User</h1>
+<p>Total User: {{ total_users }}</p>
+<p>Jumlah User dengan Course: {{ users_with_courses }}</p>
+<p>Jumlah User tanpa Course: {{ users_without_courses }}</p>
+<p>Rata-rata Course per User: {{ average_courses_per_user }}</p>
+<p>User dengan Course Terbanyak: {{ user_with_most_courses.username }}</p>
+<h2>List User tanpa Course:</h2>
+<ul>
+  {% for user in users_without_any_course %}
+    <li>{{ user.username }}</li>
+  {% endfor %}
+</ul>
